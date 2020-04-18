@@ -47,26 +47,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
-      edges {
-        node {
-          title
-          slug
-          publishDate(formatString: "MMMM Do, YYYY")
-          tags
-          heroImage {
-            fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
-              ...GatsbyContentfulFluid_tracedSVG
-            }
-          }
-          description {
-            childMarkdownRemark {
-              html
-            }
-          }
-        }
-      }
-    }
+   
 
 
     allContentfulPerson(
@@ -83,7 +64,7 @@ export const pageQuery = graphql`
             fluid(
               maxWidth: 1180
               maxHeight: 480
-              resizingBehavior: PAD
+              resizingBehavior: SCALE
               background: "rgb:000000"
             ) {
               ...GatsbyContentfulFluid_tracedSVG
@@ -108,7 +89,7 @@ export const pageQuery = graphql`
             fluid(
               maxWidth: 1180
               maxHeight: 480
-              resizingBehavior: SCALE
+              resizingBehavior: FILL
               background: "rgb:000000"
             ) {
               ...GatsbyContentfulFluid_tracedSVG
