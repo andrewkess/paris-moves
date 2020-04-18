@@ -1,0 +1,76 @@
+#flyoutMenu {
+
+    background-color: #ff2483;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform .2s
+                cubic-bezier(0, .52, 0, 1);
+    overflow: scroll;
+    z-index: 500;
+  padding:5px;
+  margin:0 auto;
+  
+  }
+  
+  
+  #flyoutMenu.hide {
+    transform: translate3d(-100vw, 0, 0);
+  
+  }
+   
+  #flyoutMenu.show {
+    transform: translate3d(0vw, 0, 0);
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+   
+  #flyoutMenu  a {
+    color: white;
+    padding-left: 10px;
+  
+    text-decoration: none;
+  }
+   
+  #flyoutMenu a:hover {
+    text-decoration: underline;
+  }
+  
+  #flyoutMenu h4 {
+      
+      font-size: 1.2em;
+      padding-bottom: 6px;
+      padding-top: 3px;
+      padding-left: 10px;
+  
+    }
+  
+    #flyoutMenu .instructorBar {
+      margin-left: 10px;
+      margin-top: 0px;
+      padding-bottom: 0px;
+    }
+  
+  .menu-left-column {
+  
+    padding-top: 0px !important;
+    padding-left: 0px !important;
+  
+  }
+  
+    #flyoutMenu .devbar {
+      margin-left: 10px;
+      margin-top: 150px;
+    }
+  
+  
+  .menuContainer{
+      padding-top:10px;
+      margin-left: 10px;
+  }
+  
+  .menuContainer2{
+      margin-left: 10px;
+  }

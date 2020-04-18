@@ -1,0 +1,148 @@
+.navigationBar{
+    background-color: black;
+    position: fixed;
+  top: 0;
+width: 100%;
+  z-index: 1999;
+padding-top:2px;
+padding-bottom: 2px;
+}
+
+
+.rightMenu{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid #0065A6;
+    text-align: right; 
+    margin-right:15px;
+margin-top:13px;
+
+}
+
+
+.langLink{
+    font-size: 0.9em;
+    color: #e4e3e3;
+    margin-right:4px;
+}
+
+.cartLink{
+    font-size: 1.1em;
+    color: white;
+    margin:0px;
+    text-decoration: none;
+    margin-left:3px;
+
+}
+
+.cartLink:visited {
+  color: white;
+    text-decoration: none;
+    
+    }
+
+.langLink:visited {
+  
+text-decoration: none;
+
+}
+
+
+.activeLang{
+    color: white;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.rowBorder{
+    padding-left: 0px;
+    padding-right: 0px;
+
+    border: 0px solid #0065A6;
+}
+
+.navMenuContainer{
+    padding-left: 0px !important;
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+    justify-content: left;
+    align-items: left;
+    border: 0px solid #0065A6;
+    text-align: left; 
+    margin-left:0px;
+    margin-top:0px;
+  margin-bottom:0px;
+
+}
+
+.navbarMenu{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid #0065A6;
+ text-align: center;
+}
+
+#roundButton {
+    background-color: #96D9FF;
+    margin-bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 10px solid #0065A6;
+    outline: none;
+    transition: all .2s cubic-bezier(0, 1.26, .8, 1.28);
+  }
+   
+  #roundButton:hover {
+    background-color: #96D9FF;
+    cursor: pointer;
+    border-color: #003557;
+    transform: scale(1.2, 1.2);
+  }
+   
+  #roundButton:active {
+    border-color: #003557;
+    background-color: #FFF;
+  }
+
+
+
+ .navAnimation{
+     width: 50px;
+
+     top:50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     background-color: black;
+ }
+
+
+ .navAnimation:after,
+.navAnimation:before,
+.navAnimation div{
+
+    background-color: white;
+    border-radius: 3px;
+    content:'';
+    display: block;
+    height: 5px;
+    margin: 7px;
+    transition: .2s;
+}
+
+.navAnimation:hover:before{
+    transform: translateY(12px) rotate(135deg);
+}
+ 
+.navAnimation:hover{
+    transform: translateY(-12px) rotate(-135deg);
+}
+
+.navAnimation:hover div{
+    transform: scale(0);
+}
+ 

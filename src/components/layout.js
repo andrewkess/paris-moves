@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 import base from './base.css'
 import Container from './container'
 import Navigation from './navigation'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 class Template extends React.Component {
   render() {
@@ -15,10 +17,12 @@ class Template extends React.Component {
     }
 
     return (
+<div>      
+  <Navigation />
       <Container>
-        <Navigation />
         {children}
       </Container>
+      </div>
     )
   }
 }

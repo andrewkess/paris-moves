@@ -16,11 +16,12 @@ if (!spaceId || !accessToken) {
   )
 }
 
+
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
+    title: 'PARIS MOVES • ONLINE DANCE STUDIO',
   },
-  pathPrefix: '/gatsby-contentful-starter',
+  pathPrefix: '/new-paris-moves',
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
@@ -29,6 +30,27 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
-    }
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Source Code Pro`,
+            variants: [`200`, `300`,]
+          },
+          {
+            family: `Roboto`,
+            subsets: [`latin`]
+          },
+        ],
+      },
+    },
   ],
 }
