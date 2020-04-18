@@ -21,7 +21,7 @@ module.exports = {
   siteMetadata: {
     title: 'PARIS MOVES • ONLINE DANCE STUDIO',
   },
-  pathPrefix: '/new-paris-moves',
+  pathPrefix: '/paris-moves',
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
