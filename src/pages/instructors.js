@@ -22,7 +22,7 @@ class BlogIndex extends React.Component {
               {posts.map(({ node }) => {
                 return (
                   <li key={node.slug}>
-                    <InstructorPreview article={node} />
+                    <InstructorPreview instructor={node} />
                   </li>
                 )
               })}
