@@ -4,13 +4,15 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Hero from '../components/hero'
 import Layout from '../components/layout'
-import ArticlePreview from '../components/article-preview'
+import InstructorPreview from '../components/instructor-preview'
 
 class RootIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allContentfulBlogPost.edges')
+    const posts = get(this, 'props.data.allContentfulTeacher.edges')
     const [author] = get(this, 'props.data.allContentfulPerson.edges')
+
+
 
     return (
       <Layout location={this.props.location}>
@@ -22,8 +24,8 @@ class RootIndex extends React.Component {
             <ul className="article-list">
               {posts.map(({ node }) => {
                 return (
-                  <li key={node.slug}>
-                    <ArticlePreview article={node} />
+                  <li key={node.webUrl}>
+                    <InstructorPreview article={node} />
                   </li>
                 )
               })}
@@ -36,6 +38,7 @@ class RootIndex extends React.Component {
 }
 
 export default RootIndex
+
 
 export const pageQuery = graphql`
   query HomeQuery {
@@ -64,6 +67,8 @@ export const pageQuery = graphql`
         }
       }
     }
+
+
     allContentfulPerson(
       filter: { contentful_id: { eq: "15jwOBqpxqSAOy2eOO4S0m" } }
     ) {
@@ -87,5 +92,40 @@ export const pageQuery = graphql`
         }
       }
     }
+
+    allContentfulTeacher
+    {
+      edges {
+        node {
+          name
+          bio {
+            bio
+          }
+          instagram
+         webUrl
+         
+          heroImage: visual {
+            fluid(
+              maxWidth: 1180
+              maxHeight: 480
+              resizingBehavior: SCALE
+              background: "rgb:000000"
+            ) {
+              ...GatsbyContentfulFluid_tracedSVG
+            }
+          }
+        
+        
+        
+        
+        }
+      }
+    }
+
+
+
+
+
+
   }
 `

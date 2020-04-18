@@ -32,7 +32,7 @@ export default () => (
     
 <Col className={styles.rightMenu}>
 <Link to="/" className={styles.langLink} activeClassName={styles.activeLang}>EN</Link> 
-<Link to="/blankslate/" className={styles.langLink} activeClassName={styles.activeLang}>FR</Link>
+<Link to="/" className={styles.langLink} activeClassName={styles.activeLang}>FR</Link>
 <IconContext.Provider value={{ color: "white", className: "global-class-name" }}>
 <span><Link to="#" className={styles.cartLink}><FiShoppingCart /></Link></span>
 </IconContext.Provider>
