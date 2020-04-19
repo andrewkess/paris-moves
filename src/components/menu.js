@@ -42,10 +42,7 @@ class Menu extends Component {
           <h2><a href="#">Contact</a></h2>
           <h2><a href="#">Privacy</a></h2>
           </div>
-         <div className="devbar">
-          <h6><Link to="/original/">Original Settings</Link></h6>
-  <h6><Link to="/blog/">Blog</Link></h6>
-  </div>
+        
        
        
         </div>
