@@ -10,6 +10,8 @@ import heroStyles from '../components/hero.module.css'
 import instructorStyles from '../pages/instructor.module.css'
 import ClassPreview from '../components/class-preview'
 
+import {FaInstagram} from 'react-icons/fa'
+
 
 import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 
@@ -35,14 +37,24 @@ const siteTitle = get(this.props, 'data.site.siteMetadata.title')
           <Helmet title={`${post.name} | ${siteTitle}`} />
 
 <Container fluid className={instructorStyles.removePads} >
-          <Row noGutters >
-      <Col sm={6}>   <div className={heroStyles.hero}>
+          <Row noGutters>
+      <Col lg={6}>   <div className={heroStyles.instructHero}>
             <Img
               className={heroStyles.heroImage}
               alt={post.name}
               fluid={post.heroImage.fluid}
             />
-          </div></Col>
+ 
+          </div>
+          
+          
+          
+       
+
+          
+          
+          
+          </Col>
 
 
 
@@ -51,7 +63,7 @@ const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
 
 
-          <Col sm={6}> <div className="wrapper">
+          <Col lg={6}> <div className="wrapper">
 
 
 
@@ -69,8 +81,8 @@ const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 <li className="flex-item"><div className={instructorStyles.teacherName}>{post.name}
 </div></li>
 <li className="flex-item">
-<a href={post.instagram}>
-Insta 
+<a href={post.instagram} >
+<FaInstagram className={instructorStyles.instaCSS}/>
 
 </a>
 
@@ -92,8 +104,8 @@ Insta
 
 </div>
 </div>
+<div className={instructorStyles.bookHeader}>Current classes</div>
 
-<h4 className="classes-headline">Book your class</h4>
 
 <ListGroup>
 

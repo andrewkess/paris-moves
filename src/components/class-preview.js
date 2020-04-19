@@ -1,8 +1,20 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 
 import { Button, ListGroup, ListGroupItem, Media } from 'react-bootstrap';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './class-preview.module.css'
+
+
+import { IconContext } from "react-icons";
+import { WiTime1, WiTime2, WiTime3,WiTime4, WiTime5, WiTime6, WiTime7, WiTime8, WiTime9, WiTime10, WiTime11,WiTime12 } from 'react-icons/wi'
+
+import {IoMdTime} from 'react-icons/io'
+
+import {FaRegCalendarAlt} from 'react-icons/fa'
+
+
+//you can use this to run a function on this display, like i did with returning a group class vs private class date 
+//{danceclassDate(danceClass)}
 
 
 function alertClicked() {
@@ -35,13 +47,47 @@ function danceclassDate(danceClass1){
 }
 
 
+function timeIcon(time){
+
+    var icon1 = 'WiTime'
+ var time1 =  time.charAt(0)
+
+
+
+    const result = '<' + icon1 + time1 + ' />'
+    //this is just a test
+ 
+
+
+    const timeIcon = 
+         <Fragment>
+        { result }
+      </Fragment>  
+
+
+    //return timeIcon
+
+
+    const createMarkup = htmlString => ({ __html: htmlString });
+
+    return (
+      <div>
+        Please click this link: <div dangerouslySetInnerHTML={createMarkup(timeIcon)} />
+      </div>
+    )
+
+
+//return timeIcon
+  }
+
+
 
 export default ({ danceClass }) => (
   <div className={styles.preview}>
 
 
 
-    <ListGroup.Item action onClick={alertClicked}>
+    <ListGroup.Item action onClick={alertClicked} id={styles.listItemRef}>
     <div className="d-flex w-100 justify-content-between">
       
       <div className={`mb-1 ${styles.preview}`}>
@@ -50,16 +96,27 @@ export default ({ danceClass }) => (
 
      <div className={styles.previewTitle}>{danceClass.name}</div>
          
-     <div className={styles.previewPrice}>{danceClass.duration} <span className={styles.grayDot}>•</span> €{danceClass.price}</div>
+     <div className={styles.previewDateBlock}>
+   
+   <FaRegCalendarAlt className={styles.timeIconed}/>
 
- <div className={`mb-1 card-text ${styles.previewDescription}`}>{danceClass.description.childMarkdownRemark.rawMarkdownBody}</div>
+         
+         {danceClass.date} {danceClass.month} 
+     
+         <span className={styles.grayDot}> • </span> 
+     
+     
+    
+     {danceClass.time} <span className={styles.grayDot}> • </span> Paris time </div>
+
   
   
 </div>
 
+<div className={styles.previewEventblock}><div className={styles.previewDuration}>
+{danceClass.duration}</div> <div className={styles.previewPrice}> €{danceClass.price}</div>
+</div>
 
-
-{danceclassDate(danceClass)}
 
 
 
@@ -69,6 +126,7 @@ export default ({ danceClass }) => (
 
     </div>
  
+    <div className={`mb-1 card-text ${styles.previewDescription}`}>{danceClass.description.childMarkdownRemark.rawMarkdownBody}</div>
 
 
     </ListGroup.Item>
