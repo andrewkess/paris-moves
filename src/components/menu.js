@@ -30,12 +30,12 @@ class Menu extends Component {
          <div className="menuContainer">
 
           <h2><a href="#">About</a></h2>
-          <h2><a href="/instructors">Instructors</a></h2>
+          <h2><Link to="/instructors/">Instructors</Link></h2>
           </div>
 
           <div className="instructorBar">
 
-          <h4><Link to="/blog/">Lara Laquiz</Link></h4>
+          <h4><Link to="/instructors/lara-laquiz">Lara Laquiz</Link></h4>
           <h4><Link to="/blog/">Melvin Hans</Link></h4>
           </div> 
           <div className="menuContainer2">

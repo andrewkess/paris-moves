@@ -13,7 +13,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allContentfulTeacher {
+            allContentfulInstructor {
               edges {
                 node {
                   name
@@ -29,7 +29,7 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors)
         }
 
-        const posts = result.data.allContentfulTeacher.edges
+        const posts = result.data.allContentfulInstructor.edges
         posts.forEach((post, index) => {
           createPage({
             path: `/instructors/${post.node.webUrl}/`,

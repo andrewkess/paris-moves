@@ -9,7 +9,7 @@ import InstructorPreview from '../components/instructor-preview'
 class RootIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allContentfulTeacher.edges')
+    const posts = get(this, 'props.data.allContentfulInstructor.edges')
     const [author] = get(this, 'props.data.allContentfulPerson.edges')
 
 
@@ -25,7 +25,7 @@ class RootIndex extends React.Component {
               {posts.map(({ node }) => {
                 return (
                   <li key={node.webUrl}>
-                    <InstructorPreview article={node} />
+                    <InstructorPreview instructor={node} />
                   </li>
                 )
               })}
@@ -74,7 +74,7 @@ export const pageQuery = graphql`
       }
     }
 
-    allContentfulTeacher
+    allContentfulInstructor
     {
       edges {
         node {

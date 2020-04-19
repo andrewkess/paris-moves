@@ -7,7 +7,11 @@ import Layout from '../components/layout'
 
 import heroStyles from '../components/hero.module.css'
 
-import { Container, Row, Col } from 'react-bootstrap';
+import instructorStyles from '../pages/instructor.module.css'
+import ClassPreview from '../components/class-preview'
+
+
+import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 
 import moment from 'moment'
 const SOME_TIMESTAMP  =  moment().format('X');
@@ -17,7 +21,7 @@ const SOME_TIMESTAMP2  =  moment().format("DD-MM-YYYY hh:mm:ss");
 class BlogPostTemplate extends React.Component {
   render() {
 //    const post = get(this.props, 'data.contentfulBlogPost')
-const post = get(this.props, 'data.contentfulTeacher')
+const post = get(this.props, 'data.contentfulInstructor')
 const danceClasses = get(this, 'props.data.allContentfulClass.edges')
 
 const siteTitle = get(this.props, 'data.site.siteMetadata.title')
@@ -30,9 +34,9 @@ const siteTitle = get(this.props, 'data.site.siteMetadata.title')
         <div style={{ background: '#fff' }}>
           <Helmet title={`${post.name} | ${siteTitle}`} />
 
-<Container>
-          <Row>
-      <Col sm>   <div className={heroStyles.hero}>
+<Container fluid className={instructorStyles.removePads} >
+          <Row noGutters >
+      <Col sm={6}>   <div className={heroStyles.hero}>
             <Img
               className={heroStyles.heroImage}
               alt={post.name}
@@ -47,15 +51,66 @@ const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
 
 
-          <Col sm> <div className="wrapper">
-            <h1 className="section-headline">{post.name}</h1>
-            <p
+          <Col sm={6}> <div className="wrapper">
+
+
+
+
+
+          <div className={instructorStyles.teacher}>
+
+
+<div className={instructorStyles.teacherDetails}>
+  
+
+
+
+<ul className={instructorStyles.containerSpaced}>
+<li className="flex-item"><div className={instructorStyles.teacherName}>{post.name}
+</div></li>
+<li className="flex-item">
+<a href={post.instagram}>
+Insta 
+
+</a>
+
+
+</li>
+</ul>
+
+
+
+<p
               style={{
                 display: 'block',
               }}
             >
               {post.bio.bio}
             </p>
+
+
+
+</div>
+</div>
+
+<h4 className="classes-headline">Book your class</h4>
+
+<ListGroup>
+
+              {danceClasses.map(({ node }) => {
+                return (
+                 
+                    <ClassPreview danceClass={node} />
+              
+                )
+              })}
+               </ListGroup>
+
+
+
+
+            
+          
           </div>
         </Col>
   </Row>
@@ -85,7 +140,7 @@ site {
   }
   
 
-  contentfulTeacher (webUrl: { eq: $slug })
+  contentfulInstructor (webUrl: { eq: $slug })
    {
       
           name
