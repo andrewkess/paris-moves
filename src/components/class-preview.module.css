@@ -10,14 +10,14 @@
       margin-bottom: 1px;
     }
     
-  #listItemRef{
-border: 1px solid  #ff2483 !important;
-background-color: pink !important;
-  }
 
-  .list-group-item-action{ 
-      background-color: #ff2483 !important;
-     }
+   
+
+
+  .listItemRef:hover{
+border: 1px solid  #ff2483 !important;
+background-color: white;
+  }
 
 
    .previewEventblock{

@@ -87,7 +87,7 @@ export default ({ danceClass }) => (
 
 
 
-    <ListGroup.Item action onClick={alertClicked} id={styles.listItemRef}>
+    <ListGroup.Item action onClick={alertClicked} className={styles.listItemRef}>
     <div className="d-flex w-100 justify-content-between">
       
       <div className={`mb-1 ${styles.preview}`}>

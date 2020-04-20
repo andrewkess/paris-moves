@@ -107,7 +107,7 @@ const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 <div className={instructorStyles.bookHeader}>Upcoming classes</div>
 
 
-<ListGroup>
+<ListGroup className={instructorStyles.listGroupStyle}>
 
               {danceClasses.map(({ node }) => {
                 return (
