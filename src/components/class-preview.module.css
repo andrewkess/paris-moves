@@ -4,7 +4,7 @@
     }
     
     .previewTitle {
-      font-size: 1.3em;
+      font-size: 1.1em;
       font-weight: 500;
       color:#212529;
       margin-bottom: 1px;
@@ -28,8 +28,8 @@ padding-top:5px;
    }
   
    .previewDuration{
-
-   color:#212529;
+font-size: 0.9em;
+   color:#27292b;
    }
   
    .previewPostpad{
@@ -52,9 +52,9 @@ padding-top:5px;
 
       .previewPrice{
         padding-bottom: 0px;
-        font-size:1em;
+        font-size: 0.9em;
         text-align: center;
-        color: #6c757d;
+        color: #27292b;
   
         font-weight: 400;
         line-height: 1.4em;

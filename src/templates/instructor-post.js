@@ -40,7 +40,7 @@ const siteTitle = get(this.props, 'data.site.siteMetadata.title')
           <Row noGutters>
       <Col lg={6}>   <div className={heroStyles.instructHero}>
             <Img
-              className={heroStyles.heroImage}
+              className={heroStyles.heroImageInstructor}
               alt={post.name}
               fluid={post.heroImage.fluid}
             />
@@ -104,7 +104,7 @@ const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
 </div>
 </div>
-<div className={instructorStyles.bookHeader}>Current classes</div>
+<div className={instructorStyles.bookHeader}>Upcoming classes</div>
 
 
 <ListGroup>

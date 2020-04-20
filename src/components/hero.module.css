@@ -17,6 +17,20 @@
   max-height: 400px;
 }
 
+
+.heroImageInstructor {
+  /*
+    Ensure golden ratio for the hero size while limiting it to some extend to
+    the viewport width
+
+    height: 61.8vh;
+  max-height: 400px;
+  
+  */
+  height: 80vh;
+
+}
+
 .heroDetails {
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
@@ -36,6 +50,19 @@
     padding-top:0vmin;
     padding:0;
   }
+  .heroImageInstructor {
+    /*
+      Ensure golden ratio for the hero size while limiting it to some extend to
+      the viewport width
+  
+      height: 61.8vh;
+    max-height: 400px;
+    
+    */
+    height: 61.8vh;
+    max-height: 400px;
+  
+  }
 }
 
 @media(min-width: 1000px) {
@@ -46,6 +73,21 @@
     position: relative;
     padding-top:5vmin;
     padding-left:5vmin;
+    padding-bottom:5vmin;
+  }
+  .heroImageInstructor {
+    /*
+      Ensure golden ratio for the hero size while limiting it to some extend to
+      the viewport width
+  
+      height: 61.8vh;
+    max-height: 400px;
+    
+    */
+    height: 80vh;
+    max-height: 1000px;
+
+  
   }
 }
 
