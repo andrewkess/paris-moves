@@ -38,7 +38,7 @@ const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
 <Container fluid className={instructorStyles.removePads} >
           <Row noGutters>
-      <Col lg={6}>   <div className={heroStyles.instructHero}>
+      <Col lg={7}>   <div className={heroStyles.instructHero}>
             <Img
               className={heroStyles.heroImageInstructor}
               alt={post.name}
@@ -63,7 +63,7 @@ const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
 
 
-          <Col lg={6}> <div className="wrapper">
+          <Col lg={5}> <div className="wrapper">
 
 
 
