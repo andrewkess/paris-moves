@@ -59,13 +59,13 @@
     max-height: 400px;
     
     */
-    height: 61.8vh;
-    max-height: 300px;
+    height: 80vh;
+    max-height: 500px;
   
   }
 }
 
-@media(min-width: 400px) {
+@media(min-width: 600px) {
   .heroDetails {
     font-size: 16px;
   }
@@ -95,9 +95,9 @@
   }
   .instructHero {
     position: relative;
-    padding-top:5vmin;
     padding-left:5vmin;
-    padding-bottom:5vmin;
+    padding-top:5vmin;
+  
   }
   .heroImageInstructor {
     /*
@@ -109,7 +109,8 @@
     
     */
     height: 80vh;
-    max-height: 1000px;
+    margin-bottom:5vmin;
+    max-height: 700px;
 
   
   }
