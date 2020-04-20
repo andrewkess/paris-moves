@@ -170,3 +170,43 @@ padding-top:5px;
     border: 1px solid #A0A0A0;
     margin-right: .5em;
   }
+
+
+
+
+
+
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 1200px) {
+    .previewTitle {
+        font-size: 1.3em;
+        font-weight: 500;
+        color:#212529;
+        margin-bottom: 1px;
+      }
+      .previewDateBlock{
+        font-size:1em;
+        }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 500px) {
+    .previewTitle {
+        font-size: 1.2em;
+        font-weight: 500;
+        color:#212529;
+        margin-bottom: 1px;
+      }
+      .previewDateBlock{
+        font-size:0.9em;
+        }
+  }
+  
+
+
+
+
+
+
+  

@@ -2,10 +2,11 @@
     background-color: black;
     position: fixed;
   top: 0;
+  left:0;
 width: 100%;
   z-index: 1999;
-padding-top:2px;
-padding-bottom: 2px;
+padding-top:0.8vmin;
+padding-bottom: 0.8vmin;
 }
 
 
