@@ -24,7 +24,7 @@ background-color: white;
   
   /* 
     border: 1px solid pink;*/
-padding-top:4px;
+padding-top:5px;
    }
   
    .previewDuration{
@@ -67,6 +67,7 @@ font-size: 0.9em;
           margin-top:0px;
           margin-right:8px;
           vertical-align: text-top; 
+          font-size: 1.1em;
           color: #ff2483;
       }
 
