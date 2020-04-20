@@ -65,14 +65,7 @@
 }
 
 @media(min-width: 600px) {
-  .heroDetails {
-    font-size: 16px;
-  }
-  .instructHero {
-    position: relative;
-    padding-top:0vmin;
-    padding:0;
-  }
+
   .heroImageInstructor {
     /*
       Ensure golden ratio for the hero size while limiting it to some extend to
