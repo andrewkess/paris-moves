@@ -5,7 +5,9 @@
   left:0;
 width: 100%;
   z-index: 1999;
-min-height:6.3vh;
+padding-bottom: 3px;
+padding-top: 3px;
+
 }
 
 

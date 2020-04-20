@@ -111,7 +111,7 @@ padding-bottom:5px;
 /* If the screen size is 501px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 900px) {
   .teacherName {
-    font-size: 3.8em;
+    font-size: 3.2em;
   }
   .teacher {
     position: relative;
@@ -123,7 +123,7 @@ padding-bottom:5px;
     margin-top:0px;
     margin-right:0px;
   
-    font-size: 2em;   
+    font-size: 1.8em;   
     color: #ff2483;
    
   }
@@ -131,7 +131,7 @@ padding-bottom:5px;
 }
 
 /* If the screen size is 500px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .teacherName {
     font-size: 2.4em;
   }

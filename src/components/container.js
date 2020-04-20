@@ -5,5 +5,5 @@ import React from 'react'
 
 
 export default ({ children }) => (
-  <div style={{    margin: '0 auto', paddingTop: '6.3vh', }}>{children}</div>
+  <div style={{    margin: '0 auto', marginTop: '60px', }}>{children}</div>
 )
