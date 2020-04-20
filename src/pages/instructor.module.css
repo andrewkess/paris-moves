@@ -42,8 +42,6 @@ padding: 0 0 0.1em 0;
 
 
 .teacherBio {
-padding-top:20px;
-  text-align: justify;
 }
 
 
@@ -93,7 +91,7 @@ padding-bottom:5px;
   list-style: none;
 
 
-  justify-content:space-between;
+  justify-content:left;
  display: flex;
  flex-direction: row;
  flex-grow: 1;
@@ -109,9 +107,9 @@ padding-bottom:5px;
 
 
 /* If the screen size is 501px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   .teacherName {
-    font-size: 3.2em;
+    font-size: 4.5vw;
   }
   .teacher {
     position: relative;
@@ -119,11 +117,11 @@ padding-bottom:5px;
     padding: 0px 5px 10px 5px
   }
   .instaCSS{
-    margin-left:0px;
+    margin-left:1.5vw;
     margin-top:0px;
     margin-right:0px;
   
-    font-size: 1.8em;   
+    font-size: 2.5vw;   
     color: #ff2483;
    
   }
@@ -131,21 +129,21 @@ padding-bottom:5px;
 }
 
 /* If the screen size is 500px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .teacherName {
-    font-size: 2.4em;
-  }
+    font-size: 9vw;
+    }
   .teacher {
      position: relative;
     padding: 0px 5px 10px 5px
   }
 
   .instaCSS{
-    margin-left:0px;
+    margin-left:4vw;
     margin-top:0px;
     margin-right:0px;
   
-    font-size: 1.5em;   
+    font-size: 7vw;   
     color: #ff2483;
    
   }

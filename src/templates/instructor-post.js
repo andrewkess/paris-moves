@@ -92,7 +92,7 @@ const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
 
 
-<p
+<p className={instructorStyles.teacherBio}
               style={{
                 display: 'block',
               }}

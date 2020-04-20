@@ -24,7 +24,7 @@ background-color: white;
   
   /* 
     border: 1px solid pink;*/
-padding-top:5px;
+padding-top:4px;
    }
   
    .previewDuration{
@@ -73,7 +73,7 @@ font-size: 0.9em;
     
     .previewDescription {
       padding-top: 0.2em;
-      font-size:1em;
+      font-size:0.9em;
   font-weight: 400;
   margin-bottom:0;
   line-height: 1.4em;
