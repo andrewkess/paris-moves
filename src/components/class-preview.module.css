@@ -77,9 +77,11 @@ font-size: 0.9em;
   font-weight: 400;
   margin-bottom:0;
   line-height: 1.4em;
-  text-align: justify;
-      }
+  text-align: left;
+}
     
+
+
       .previewTimeIcon {
         font-size: 1em;
         border: 1px solid pink;
