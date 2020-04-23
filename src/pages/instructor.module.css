@@ -9,7 +9,17 @@
   overflow: hidden;
 }
 
+.myWrapper{
 
+  width: calc(100% - 10vmin);
+  margin: 0 auto;
+  padding-top: 5vmin;
+  padding-right: 0px;
+  padding-bottom: 5vmin;
+  padding-left: 0px;
+
+
+}
 
 .teacher {
   position: relative;
@@ -42,6 +52,7 @@ padding: 0 0 0.1em 0;
 
 
 .teacherBio {
+  margin-bottom: 10spx;
 }
 
 
@@ -126,9 +137,9 @@ padding-bottom:5px;
    
   }
   .bookHeader{
-    font-size: 1.8vw;
+    font-size: 1.6vw;
   }
-  
+
 }
 
 /* If the screen size is 500px wide or less, set the font-size of <div> to 30px */
@@ -175,6 +186,6 @@ padding-bottom:5px;
    
   }
   .bookHeader{
-    font-size: 5.5vw;
+    font-size: 5.8vw;
   }
 }

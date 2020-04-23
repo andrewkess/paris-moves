@@ -63,11 +63,11 @@ const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
 
 
-          <Col lg={12} xl={5}> <div className="wrapper">
+          <Col lg={12} xl={5}> <div className={instructorStyles.myWrapper}>
 
 
 
-
+          
 
           <div className={instructorStyles.teacher}>
 
