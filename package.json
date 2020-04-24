@@ -1,11 +1,12 @@
 {
-  "name": "gatsby-contentful-starter",
-  "description": "Starter Contentful Gatsby Blog",
+  "name": "paris-moves",
+  "description": "Starter Contentful Gatsby Stripe Blog",
   "version": "1.0.0",
-  "author": "Stefan Judis <stefanjudis@gmail.com>",
+  "author": "Andrew Kessinger <parismovesensemble@gmail.com>",
   "bugs": {
     "url": "https://github.com/contentful-userland/gatsby-contentful-starter/issues"
   },
+ 
   "dependencies": {
     "bootstrap": "^4.4.1",
     "gatsby-image": "^2.2.43",
@@ -55,7 +56,6 @@
     "url": "git+https://github.com/contentful-userland/gatsby-contentful-starter.git"
   },
   "scripts": {
-    "dev": "npm run develop",
     "develop": "gatsby develop",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -67,6 +67,19 @@
     "setup": "node ./bin/setup.js",
     "start": "npm run develop",
     "heroku-postbuild": "gatsby build",
-    "cleanup-repository": "rimraf bin contentful && yarn remove contentful-import chalk inquirer rimraf "
+    "cleanup-repository": "rimraf bin contentful && yarn remove contentful-import chalk inquirer rimraf ",
+    "functions": "cd functions && npm i && cd ..",
+    "webhook": "stripe listen --forward-to localhost:8888/.netlify/functions/handle-purchase",
+    "dev": "netlify dev"
+
   }
 }
+  
+  
+  
+  
+  
+  
+  
+  
+  
