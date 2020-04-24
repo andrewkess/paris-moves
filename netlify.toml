@@ -1,0 +1,10 @@
+[build]
+  command = "npm run functions"
+  publish = "public"
+  functions = "functions"
+
+[template.environment]
+  STRIPE_PUBLISHABLE_KEY = "pk_test_YVo4zHtsiia3uV3ds7Us0iM400ZbnZRVTJ"
+  STRIPE_SECRET_KEY = "sk_test_g3nWTRi8tw0D1mUxEAOvCoxu00XFsRbccq"
+  STRIPE_WEBHOOK_SECRET = "whsec_qMsMdejIsqopCBK06B6OuoFGOTcT3XQ7"
+
