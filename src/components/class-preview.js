@@ -129,6 +129,22 @@ export default ({ danceClass }) => (
     <div className={`mb-1 card-text ${styles.previewDescription}`}>{danceClass.description.childMarkdownRemark.rawMarkdownBody}</div>
 
 
+    <form action="/.netlify/functions/create-checkout" method="post">
+          <label for="quantity">Quantity</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            value="1"
+            min="1"
+            max="10"
+          />
+          <input type="hidden" name="sku" value="DEMO001" />
+          <button type="submit">Buy Now</button>
+        </form>
+
+
+
     </ListGroup.Item>
  <div className={styles.previewPostpad}> </div>
 
